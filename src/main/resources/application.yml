@@ -1,0 +1,15 @@
+#please configure your own database access
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://put_database_url_here:put_port_here/put_database_name_here
+    username: put_username_here
+    password: put_password_here
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    database: postgresql
